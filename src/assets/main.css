@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.text-btn{
+  color: black;
+}
+.text-btn:hover{
+  color: rgb(223, 62, 106);
+}
