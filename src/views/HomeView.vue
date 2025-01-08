@@ -1,49 +1,37 @@
 <script setup lang="ts">
+import Title from '@/components/Title.vue';
+import About from '@/components/About.vue';
+import Education from '@/components/Education.vue';
+import Projects from '@/components/Projects.vue';
+import Contact from '@/components/Contact.vue';
+import Footer from '@/components/Footer.vue';
+import { onMounted } from 'vue';
+import { useTitleImgStyleStore } from '@/stores/titleImgStyle';
 
+const titleImgStyle = useTitleImgStyleStore();
+
+onMounted(()=>{
+  setTimeout(()=>{
+    titleImgStyle.opac = 1;
+  },0);
+})
 </script>
 
 <template>
   <main>
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
-    <div>A</div>
+    <Title/>
+    <About id="about"/>
+    <Education id="education"/>
+    <Projects id="projects"/>
+    <Contact id="contact"/>
+    <Footer/>
   </main>
 </template>
+
+<style scoped>
+
+#about, #education, #projects, #contact {
+  scroll-margin-top: 6rem;
+}
+
+</style>

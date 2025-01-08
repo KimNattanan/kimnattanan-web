@@ -1,42 +1,48 @@
 <script setup lang="ts">
 
+const scrollTo = (id: string)=>{
+  const el = document.getElementById(id);
+  if(!el){
+    console.log(`scrollTo(${id}) element not found.`);
+    return;
+  }
+  el.scrollIntoView({behavior:'smooth'});
+}
+
 </script>
 <template>
 
   <div class="fixed flex h-24 w-full bg-white font-medium navbar">
     <div class="ml-12 h-full content-center font-serif text-xl">
-      <router-link :to="{ name: 'home' }" class="flex items-center">
-        <img
-        class="object-contain h-10 mr-2"
-        src="/icon.ico"
-        />
-        hello
-      </router-link>
+      <a href='/' class="flex items-center">
+        <img class="object-contain h-10 mr-2" src="/icon.ico"/>
+        KIM Nattanan
+      </a>
     </div>
-    <ul class="flex h-full right-0 absolute p-6 text-lg">
+    <ul class="flex h-full ml-auto p-6 text-lg">
       <li>
-        <router-link
-        :to="{ name: 'home', hash: '#1' }"
-        class="text-btn"
-        >1</router-link>
-      </li>
-      <li>
-        <router-link
-        :to="{ name: 'home', hash: '#2' }"
+        <button
           class="text-btn"
-        >2</router-link>
+          @click="scrollTo('about')"
+        >About</button>
       </li>
       <li>
-        <router-link
-        :to="{ name: 'home', hash: '#3' }"
-        class="text-btn"
-        >3</router-link>
+        <button
+          class="text-btn"
+          @click="scrollTo('education')"
+        >Education</button>
       </li>
       <li>
-        <router-link
-        :to="{ name: 'home', hash: '#4' }"
-        class="text-btn"
-        >4</router-link>
+        <button
+          class="text-btn"
+          @click="scrollTo('projects')"
+        >Projects</button>
+      </li>
+      <li>
+        <button
+          class="text-btn"
+          @click="scrollTo('contact')"
+        >Contact</button>
       </li>
     </ul>
   </div>
