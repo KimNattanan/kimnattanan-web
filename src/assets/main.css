@@ -2,21 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-marcellus{
-  font-family: 'Marcellus';
+:root {
+  --col1-1: rgb(129,205,219);
+  --col1-2: rgb(189,229,236);
+  --col2-1: rgb(241,142,67);
+  --col2-2: rgb(246, 198, 162);
+  --col3-1: rgb(235, 125, 140);
+  --col3-2: rgb(252, 179, 206);
+  --col3-3: rgb(253, 193, 216);
 }
 
-.bg-col1{
-  background-color: rgb(129,205,219);
-}
-.bg-col3{
-  background-color: rgb(241,142,67);
-}
-.bg-col2{
-  background-color: rgb(189, 229, 236);
-}
-.bg-col4{
-  background-color: rgb(246, 198, 162);
+.font-marcellus{
+  font-family: 'Marcellus';
 }
 
 .text-btn{

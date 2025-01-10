@@ -14,9 +14,10 @@ const imgStyle = useTitleImgStyleStore();
     </div>
     <img
       id="titleImg"
-      class="object-contain max-w-[60vw] max-h-full transition-opacity duration-500"
+      class="object-contain max-w-[60vw] max-h-full transition-opacity duration-500 select-none"
       :style="{opacity: imgStyle.opac}"
       src="/purikone.jpg"
+      draggable="false"
     />
   </div>
   

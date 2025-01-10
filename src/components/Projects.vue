@@ -3,9 +3,9 @@
 </script>
 <template>
 
-  <div class="p-10 bg-col4 w-full flex flex-col">
+  <div class="p-10 bg-col2-2 w-full flex flex-col">
     <div class="w-full h-full flex flex-col bg-white rounded-xl">
-      <div class="text-7xl my-20 text-center font-marcellus tracking-widest">PROJECTS</div>
+      <div class="text-7xl my-20 text-center font-marcellus tracking-widest select-none">PROJECTS</div>
       <div class="project-container mx-20 my-10">
         project1．．．
       </div>

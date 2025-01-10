@@ -4,7 +4,7 @@
 <template>
 
   <div class="h-40 w-full flex items-center justify-center">
-    @ Kim
+    @ KimNattanan
   </div>
   
 </template>

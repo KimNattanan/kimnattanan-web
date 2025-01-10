@@ -12,7 +12,7 @@ const scrollTo = (id: string)=>{
 </script>
 <template>
 
-  <div class="fixed flex h-24 w-full bg-white font-medium navbar">
+  <div class="fixed flex h-24 w-full bg-white font-medium navbar z-10">
     <div class="ml-12 h-full content-center font-serif text-xl">
       <a href='/' class="flex items-center">
         <img class="object-contain h-10 mr-2" src="/icon.ico"/>

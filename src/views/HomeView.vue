@@ -30,7 +30,7 @@ onMounted(()=>{
 
 <style scoped>
 
-#about, #education, #projects, #contact {
+#education, #about, #projects, #contact {
   scroll-margin-top: 6rem;
 }
 
