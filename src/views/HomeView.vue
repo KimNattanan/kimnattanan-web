@@ -18,7 +18,7 @@ onMounted(()=>{
 </script>
 
 <template>
-  <main>
+  <main class="overflow-x-hidden">
     <Title/>
     <About id="about"/>
     <Education id="education"/>
