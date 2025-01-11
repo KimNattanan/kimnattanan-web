@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+
+const route = useRoute();
+const router = useRouter();
 
 const scrollTo = (id: string)=>{
   const el = document.getElementById(id);
@@ -8,40 +13,44 @@ const scrollTo = (id: string)=>{
   }
   el.scrollIntoView({behavior:'smooth'});
 }
+const goHomeWithHash = (id: string)=>{
+  if(route.path == '/') scrollTo(id);
+  else router.push({name:'home',hash:`#${id}`});
+}
 
 </script>
 <template>
 
   <div class="fixed flex h-24 w-full bg-white font-medium navbar z-10">
     <div class="ml-12 h-full content-center font-serif text-xl">
-      <a href='/' class="flex items-center">
+      <router-link :to="{name: 'home'}" class="flex items-center">
         <img class="object-contain h-10 mr-2" src="/icon.ico"/>
         KIM Nattanan
-      </a>
+      </router-link>
     </div>
     <ul class="flex h-full ml-auto p-6 text-lg">
       <li>
         <button
           class="text-btn"
-          @click="scrollTo('about')"
+          @click="goHomeWithHash('about')"
         >About</button>
       </li>
       <li>
         <button
           class="text-btn"
-          @click="scrollTo('education')"
+          @click="goHomeWithHash('education')"
         >Education</button>
       </li>
       <li>
         <button
           class="text-btn"
-          @click="scrollTo('projects')"
+          @click="goHomeWithHash('projects')"
         >Projects</button>
       </li>
       <li>
         <button
           class="text-btn"
-          @click="scrollTo('contact')"
+          @click="goHomeWithHash('contact')"
         >Contact</button>
       </li>
     </ul>

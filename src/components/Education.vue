@@ -4,7 +4,7 @@
 <template>
 
   <div class="pl-32 pr-64 py-24 w-2/3">
-    <div class="text-7xl font-marcellus my-10 tracking-widest select-none">EDUCATION</div>
+    <div class="text-7xl font-marcellus my-10 tracking-[0.2em] select-none">EDUCATION</div>
     <div class="text-lg break-words">education．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．</div>
   </div>
   

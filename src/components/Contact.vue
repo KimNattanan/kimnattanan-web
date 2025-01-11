@@ -3,9 +3,11 @@
 </script>
 <template>
 
-  <div class="pl-32 pr-64 py-24 w-2/3">
-    <div class="text-7xl font-marcellus my-10 tracking-widest select-none">CONTACT</div>
-    <div class="text-lg break-words">contact．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．</div>
+  <div class="mt-40 mb-20 flex justify-center">
+    <div class="w-1/3 flex flex-col">
+      <div class="text-7xl font-marcellus my-10 tracking-[0.2em] select-none self-center">CONTACT</div>
+      <div class="text-lg break-words">contact．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．</div>
+    </div>
   </div>
   
 </template>
