@@ -14,6 +14,8 @@ export default {
         "col1-1": "var(--col1-1)",
         "col1-2": "var(--col1-2)",
         "col1-3": "var(--col1-3)",
+        "col1-4": "var(--col1-4)",
+        "col1-5": "var(--col1-5)",
         "col2-1": "var(--col2-1)",
         "col2-2": "var(--col2-2)",
         "col3-1": "var(--col3-1)",

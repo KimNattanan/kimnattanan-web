@@ -1,6 +1,11 @@
 <script setup lang="ts">
+import CoolButton from '@/components/CoolButton.vue';
 import { onMounted } from 'vue';
+import { useRouter } from 'vue-router';
 
+const goto = (url: string)=>{
+  window.open(url,'_blank')?.focus();
+}
 
 onMounted(()=>{
   scrollTo(0,0);
@@ -9,60 +14,14 @@ onMounted(()=>{
 </script>
 
 <template>
-  <main>
-    <div>Web Chat !!</div>
-    <!-- <RouterView/> -->
-    <div>0</div>
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>0</div>
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>0</div>
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>0</div>
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>0</div>
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-  </main>
+  <div class="flex flex-col">
+    <div class="font-marcellus text-6xl tracking-[0.2em] text-col1-5 text-center my-4">WEB CHAT</div>
+    <div class="bg-white rounded-xl w-full my-4 px-40 py-16">
+      <CoolButton @click="goto('https://kimchi-nyabe-chat.vercel.app/')">
+        ｃｌiｃｋ ➞ (∗'ര ᎑ ര`∗)
+      </CoolButton>
+    </div>
+  </div>
 </template>
 
 <style scoped>

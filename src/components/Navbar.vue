@@ -14,7 +14,7 @@ const scrollTo = (id: string)=>{
   el.scrollIntoView({behavior:'smooth'});
 }
 const goHomeWithHash = (id: string)=>{
-  if(route.path == '/') scrollTo(id);
+  if(route.path == '/' || id == 'contact') scrollTo(id);
   else router.push({name:'home',hash:`#${id}`});
 }
 

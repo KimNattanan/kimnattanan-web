@@ -8,6 +8,7 @@ import Footer from './components/Footer.vue';
 
   <Navbar/>
   <RouterView/>
+  <!-- <RouterView name="WebChat"/> -->
   <Contact id="contact"/>
   <Footer/>
   

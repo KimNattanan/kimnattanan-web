@@ -3,8 +3,6 @@ import Title from '@/components/Title.vue';
 import About from '@/components/About.vue';
 import Education from '@/components/Education.vue';
 import Projects from '@/components/Projects.vue';
-import Contact from '@/components/Contact.vue';
-import Footer from '@/components/Footer.vue';
 import { onMounted, onUnmounted } from 'vue';
 import { useTitleImgStyleStore } from '@/stores/titleImgStyle';
 import { useRoute } from 'vue-router';
@@ -32,7 +30,10 @@ onUnmounted(()=>{
 </script>
 
 <template>
-  <main class="">
+  <!-- <main>
+    <Title/>
+  </main> -->
+  <main>
     <Title/>
     <About id="about"/>
     <Education id="education"/>

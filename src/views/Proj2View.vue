@@ -10,7 +10,7 @@ onMounted(()=>{
 
 <template>
   <main>
-    <div>Proj2!??</div>
+    <div>this is Proj2 !??</div>
     <div>0</div>
     <div>1</div>
     <div>2</div>
