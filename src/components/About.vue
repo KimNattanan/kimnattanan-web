@@ -4,7 +4,7 @@
 <template>
 
   <div>
-    <div class="pl-32 pr-64 py-24 bg-col1-1 w-2/3 h-[28.5rem] overflow-hidden relative
+    <div class="pl-32 pr-64 py-24 bg-col1-1 w-2/3 overflow-hidden relative
                 transition-all duration-700 hover:translate-x-[calc(6.6666667vh)] hover:scale-110 hover:bg-col1-2">
       <div class="w-[28rem] h-[28rem] bottom-[-16rem] right-[-8rem] absolute cat-wheel">
         <img src="/cat_color.png" class="object-contain w-20 ml-[9.5rem] select-none" draggable="false" />

@@ -21,14 +21,14 @@ const goHomeWithHash = (id: string)=>{
 </script>
 <template>
 
-  <div class="fixed flex h-24 w-full bg-white font-medium navbar z-10">
-    <div class="ml-12 h-full content-center font-serif text-xl">
-      <router-link :to="{name: 'home'}" class="flex items-center">
+  <div class="fixed flex sm:h-24 h-24 w-screen bg-white font-medium navbar z-10">
+    <div class="sm:ml-12 ml-2 h-full content-center font-serif lg:text-xl sm:text-base text-sm">
+      <a href="/" class="flex items-center">
         <img class="object-contain h-10 mr-2" src="/icon.ico"/>
         KIM Nattanan
-      </router-link>
+      </a>
     </div>
-    <ul class="flex h-full ml-auto p-6 text-lg">
+    <ul class="flex h-full ml-auto sm:p-6 p-2 lg:text-lg sm:text-sm text-xs">
       <li>
         <CoolButton @click="goHomeWithHash('about')">About</CoolButton>
       </li>
@@ -49,9 +49,19 @@ const goHomeWithHash = (id: string)=>{
 <style scoped>
 
 .navbar > ul > li {
-  margin-right: 5rem;
+  margin-right: 0.4rem;
   align-items: center;
   display: flex;
+}
+@media (min-width: 640px) {
+  .navbar > ul > li {
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar > ul > li {
+    margin-right: 5rem;
+  }
 }
 
 </style>
