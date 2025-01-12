@@ -42,8 +42,4 @@ onUnmounted(()=>{
 
 <style scoped>
 
-#education, #about, #projects, #contact {
-  scroll-margin-top: 6rem;
-}
-
 </style>

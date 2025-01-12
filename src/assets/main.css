@@ -20,3 +20,7 @@
 .text-btn:hover{
   color: var(--col3-4);
 }
+
+#education, #about, #projects, #contact {
+  scroll-margin-top: 6rem;
+}
