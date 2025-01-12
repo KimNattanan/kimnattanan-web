@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+import CoolButton from './CoolButton.vue';
 
 const route = useRoute();
 const router = useRouter();
@@ -30,28 +30,16 @@ const goHomeWithHash = (id: string)=>{
     </div>
     <ul class="flex h-full ml-auto p-6 text-lg">
       <li>
-        <button
-          class="text-btn"
-          @click="goHomeWithHash('about')"
-        >About</button>
+        <CoolButton @click="goHomeWithHash('about')">About</CoolButton>
       </li>
       <li>
-        <button
-          class="text-btn"
-          @click="goHomeWithHash('education')"
-        >Education</button>
+        <CoolButton @click="goHomeWithHash('education')">Education</CoolButton>
       </li>
       <li>
-        <button
-          class="text-btn"
-          @click="goHomeWithHash('projects')"
-        >Projects</button>
+        <CoolButton @click="goHomeWithHash('projects')">Projects</CoolButton>
       </li>
       <li>
-        <button
-          class="text-btn"
-          @click="goHomeWithHash('contact')"
-        >Contact</button>
+        <CoolButton @click="goHomeWithHash('contact')">Contact</CoolButton>
       </li>
     </ul>
   </div>

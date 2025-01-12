@@ -11,11 +11,12 @@
   --col3-1: rgb(235, 125, 140);
   --col3-2: rgb(252, 179, 206);
   --col3-3: rgb(253, 193, 216);
+  --col3-4: rgb(223,62,106);
 }
 
 .text-btn{
   color: black;
 }
 .text-btn:hover{
-  color: rgb(223, 62, 106);
+  color: var(--col3-4);
 }

@@ -19,6 +19,7 @@ export default {
         "col3-1": "var(--col3-1)",
         "col3-2": "var(--col3-2)",
         "col3-3": "var(--col3-3)",
+        "col3-4": "var(--col3-4)",
       },
     },
   },
