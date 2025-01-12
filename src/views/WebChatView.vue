@@ -11,6 +11,7 @@ onMounted(()=>{
 <template>
   <main>
     <div>Web Chat !!</div>
+    <!-- <RouterView/> -->
     <div>0</div>
     <div>1</div>
     <div>2</div>

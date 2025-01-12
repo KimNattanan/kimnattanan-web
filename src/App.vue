@@ -10,9 +10,6 @@ import Footer from './components/Footer.vue';
   <RouterView/>
   <Contact id="contact"/>
   <Footer/>
-  <Footer/>
-  <Footer/>
-  <Footer/>
   
 </template>
 <style scoped>
