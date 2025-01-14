@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 import WebChatView from '@/views/WebChatView.vue'
-import Proj2View from '@/views/Proj2View.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
+import OfficeSurvivalView from '@/views/OfficeSurvivalView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,9 +24,9 @@ const router = createRouter({
           component: WebChatView,
         },
         {
-          path: '/projects/proj2',
-          name: 'proj2',
-          component: Proj2View,
+          path: '/projects/office-survival',
+          name: 'office-survival',
+          component: OfficeSurvivalView,
         },
       ],
     },

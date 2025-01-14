@@ -16,11 +16,11 @@
           </div>
         </div>
         <div class="project-container">
-          <router-link :to="{name:'proj2'}" class="flex-1 m-2 hover:opacity-75 duration-200">
+          <router-link :to="{name:'office-survival'}" class="flex-1 m-2 hover:opacity-75 duration-200">
             <img src="/purikone.jpg" class="w-full h-full select-none" draggable="false" />
           </router-link>
           <div class="font-jost text-3xl text-center h-10 mx-2 mt-[0.3rem] mb-[0.7rem] overflow-hidden">
-            Project 2
+            Office Survival Game
           </div>
         </div>
         <div class="project-container">

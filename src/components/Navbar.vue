@@ -30,16 +30,16 @@ const goHomeWithHash = (id: string)=>{
     </div>
     <ul class="flex h-full ml-auto sm:p-6 p-2 lg:text-lg sm:text-sm text-xs">
       <li>
-        <CoolButton @click="goHomeWithHash('about')">About</CoolButton>
+        <CoolButton @click="goHomeWithHash('about')" class="text-btn">About</CoolButton>
       </li>
       <li>
-        <CoolButton @click="goHomeWithHash('education')">Education</CoolButton>
+        <CoolButton @click="goHomeWithHash('education')" class="text-btn">Education</CoolButton>
       </li>
       <li>
-        <CoolButton @click="goHomeWithHash('projects')">Projects</CoolButton>
+        <CoolButton @click="goHomeWithHash('projects')" class="text-btn">Projects</CoolButton>
       </li>
       <li>
-        <CoolButton @click="goHomeWithHash('contact')">Contact</CoolButton>
+        <CoolButton @click="goHomeWithHash('contact')" class="text-btn">Contact</CoolButton>
       </li>
     </ul>
   </div>

@@ -61,7 +61,7 @@ const copyBtnLeave = ()=>{
         </div>
         <div class="bg-black h-[0.1rem] w-full absolute left-[-100%]" ref="emailUnderline"></div>
       </div>
-      <button class="relative w-7 h-7" @click="mailCopyClicked" @mouseenter="copyBtnEnter" @mouseleave="copyBtnLeave">
+      <button class="relative w-7 h-7" @click="mailCopyClicked" @mouseenter="copyBtnEnter" @touchstart="copyBtnEnter" @mouseleave="copyBtnLeave" @touchend="copyBtnLeave">
         <img src="/copy_icon.png" class="w-full h-full top-0 left-0 absolute"/>
         <div v-show="isMailCopy" class="w-full h-full top-0 left-0 absolute border-green-600 border-2 rounded-full"></div>
       </button>

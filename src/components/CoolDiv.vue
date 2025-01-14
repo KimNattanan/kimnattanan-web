@@ -47,9 +47,8 @@ defineProps<{
 <template>
 
   
-  <button
+  <div
     class="pb-[0.1rem] relative overflow-hidden"
-    @click="click"
     @mouseenter="mouseEnter"
     @touchstart="mouseEnter"
     @mouseleave="mouseLeave"
@@ -57,7 +56,7 @@ defineProps<{
   >
     <slot/>
     <div class="bg-black h-[0.1rem] w-full absolute left-[-100%]" ref="underline"></div>
-  </button>
+  </div>
   
 </template>
 <style scoped>
