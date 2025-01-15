@@ -3,13 +3,13 @@ import { ref } from 'vue';
 
 
 const underline = ref<HTMLDivElement | null>(null);
-const underlineLatest = ref<HTMLDivElement | null>(null);
+const underlineLatest = [] as HTMLDivElement[];
 const mouseEnter = ()=>{
   if(!underline.value || !underline.value.parentNode) return;
   const clone = underline.value.cloneNode(true) as HTMLDivElement;
-  underlineLatest.value = clone;
+  underlineLatest.push(clone);
   clone.style.left='0%';
-  underline.value.parentNode.appendChild(underlineLatest.value);
+  underline.value.parentNode.appendChild(clone);
   clone.animate(
     [
       {left: '-100%'},
@@ -23,19 +23,21 @@ const mouseEnter = ()=>{
   );
 }
 const mouseLeave = ()=>{
-  const cur=underlineLatest.value
-  if(!cur) return;
-  cur.animate(
-    [
-      {left: '100%'}
-    ],
-    {
-      duration: 500,
-      iterations: 1,
-      easing: 'cubic-bezier(1,0,0,1)',
+  while(underlineLatest.length){
+    const cur=underlineLatest.pop()
+    if(!cur) return;
+    cur.animate(
+      [
+        {left: '100%'}
+      ],
+      {
+        duration: 500,
+        iterations: 1,
+        easing: 'cubic-bezier(1,0,0,1)',
+      }
+    ).onfinish=()=>{
+      cur.remove();
     }
-  ).onfinish=()=>{
-    cur.remove();
   }
 }
 
@@ -51,9 +53,7 @@ defineProps<{
     class="pb-[0.1rem] relative overflow-hidden"
     @click="click"
     @mouseenter="mouseEnter"
-    @touchstart="mouseEnter"
     @mouseleave="mouseLeave"
-    @touchend="mouseLeave"
   >
     <slot/>
     <div class="bg-black h-[0.1rem] w-full absolute left-[-100%]" ref="underline"></div>

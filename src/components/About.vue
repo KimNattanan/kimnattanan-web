@@ -4,13 +4,13 @@
 <template>
 
   <div>
-    <div class="pl-32 pr-64 py-24 bg-col1-1 w-2/3 overflow-hidden relative
+    <div class="md:pl-32 pl-8 md:pr-64 pr-8 py-24 bg-col1-1 w-2/3 overflow-hidden relative
                 transition-all duration-700 hover:translate-x-[calc(6.6666667vh)] hover:scale-110 hover:bg-col1-2">
-      <div class="w-[28rem] h-[28rem] bottom-[-16rem] right-[-8rem] absolute cat-wheel">
+      <div class="md:w-[28rem] w-96 aspect-square bottom-[-16rem] right-[-8rem] absolute cat-wheel">
         <img src="/cat_color.png" class="object-contain w-20 ml-[9.5rem] select-none" draggable="false" />
       </div>
-      <div class="text-7xl font-marcellus my-10 tracking-[0.2em] select-none">ABOUT</div>
-      <div class="text-lg break-words">about．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．</div>
+      <div class="md:text-7xl text-5xl font-marcellus my-10 tracking-[0.2em] select-none">ABOUT</div>
+      <div class="md:text-lg break-words">about．．．．．．．．．．．．．．．．．．．．．．．．．．</div>
     </div>
   </div>
   
