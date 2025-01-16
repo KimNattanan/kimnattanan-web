@@ -18,17 +18,37 @@ const goHomeWithHash = (id: string)=>{
   else router.push({name:'home',hash:`#${id}`});
 }
 
+const menuToggle=(event: MouseEvent)=>{
+  
+}
+
 </script>
 <template>
 
-  <div class="fixed flex sm:h-24 h-24 w-screen bg-white font-medium navbar z-10">
-    <div class="sm:ml-12 ml-2 h-full content-center font-serif lg:text-xl sm:text-base text-sm">
+  <div class="fixed flex w-screen bg-white font-medium navbar z-20
+              sm:h-24
+              h-16">
+    <div class="h-full content-center font-serif
+                lg:text-xl
+                sm:ml-12 sm:text-base
+                ml-4 text-sm">
       <a href="/" class="flex items-center">
         <img class="object-contain h-10 mr-2" src="/icon.ico"/>
         KIM Nattanan
       </a>
     </div>
-    <ul class="flex h-full ml-auto sm:p-6 p-2 lg:text-lg sm:text-sm text-xs">
+    <div class="fixed w-screen h-16 justify-end items-center mr-4
+                xs:hidden
+                flex">
+      <button class="h-1/2 aspect-square text-[]" @click="menuToggle">
+        ＜
+      </button>
+    </div>
+    <ul class="h-full ml-auto
+                lg:text-lg
+                sm:p-6 sm:text-sm
+                xs:flex
+                p-2 text-xs hidden">
       <li>
         <CoolButton @click="goHomeWithHash('about')" class="text-btn">About</CoolButton>
       </li>
@@ -43,13 +63,13 @@ const goHomeWithHash = (id: string)=>{
       </li>
     </ul>
   </div>
-  <div class="h-24"></div>
+  <div class="sm:h-24 h-16"></div>
   
 </template>
 <style scoped>
 
 .navbar > ul > li {
-  margin-right: 0.4rem;
+  margin-right: 1rem;
   align-items: center;
   display: flex;
 }

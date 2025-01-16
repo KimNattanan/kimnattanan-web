@@ -54,7 +54,11 @@ const copyBtnLeave = ()=>{
 <template>
 
   <div class="mt-40 mb-20 flex flex-col justify-center">
-    <div class="font-marcellus tracking-[0.2em] md:text-7xl text-5xl text-center py-4">CONTACT</div>
+    <div class="font-marcellus tracking-[0.2em] text-center py-4
+                md:text-7xl
+                text-5xl">
+      CONTACT
+    </div>
     <div class="flex justify-center py-4 text-lg">
       Please contact:
       <div class="relative overflow-hidden pb-[0.1rem]">

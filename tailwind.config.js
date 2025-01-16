@@ -23,6 +23,9 @@ export default {
         "col3-3": "var(--col3-3)",
         "col3-4": "var(--col3-4)",
       },
+      screens: {
+        'xs': '480px',
+      },
     },
   },
   plugins: [],

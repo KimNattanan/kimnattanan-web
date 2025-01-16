@@ -3,20 +3,33 @@
 </script>
 <template>
 
-  <div class="md:p-10 w-full flex flex-col">
+  <div class="w-full flex flex-col
+              md:p-10">
     <div class="w-full h-full flex flex-col bg-col1-3">
-      <div class="md:text-7xl text-5xl mt-20 text-center font-marcellus tracking-[0.2em] select-none text-white">PROJECTS</div>
-      <div class="p-8 flex flex-wrap justify-center">
+      <div class="mt-20 text-center font-marcellus tracking-[0.2em] select-none text-white
+                  lg:text-7xl            
+                  md:text-6xl
+                  sm:text-5xl
+                  text-4xl">
+        PROJECTS
+      </div>
+      <div class="flex flex-wrap justify-center">
         <div class="project-container">
           <div class="proj">
-            <router-link :to="{name:'webchat'}" class="flex-1 hover:opacity-75 duration-200">
-              <img src="/purikone.jpg" class="w-full h-full select-none" draggable="false" />
+            <router-link :to="{name:'webchat'}" class="w-full inline-block mb-2">
+              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none" draggable="false" />
             </router-link>
-            <div class="font-jost text-3xl text-center h-10 mt-2 overflow-hidden">
+            <div class="font-jost text-center leading-5
+                        md:text-2xl
+                        xs:text-xl
+                        text-sm">
               Web Chat
             </div>
           </div>
-          <div class="tags"> <!-- for tags -->
+          <div class="tags
+                      lg:text-base
+                      xs:text-sm
+                      text-xs"> <!-- for tags -->
             <ul>
               <li class="next-js">Next.js</li>
               <li class="tailwind">Tailwind</li>
@@ -26,14 +39,20 @@
         </div>
         <div class="project-container">
           <div class="proj">
-            <router-link :to="{name:'office-survival'}" class="flex-1 hover:opacity-75 duration-200">
-              <img src="/purikone.jpg" class="w-full h-full select-none" draggable="false" />
+            <router-link :to="{name:'office-survival'}" class="w-full inline-block mb-2">
+              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none" draggable="false" />
             </router-link>
-            <div class="font-jost text-3xl text-center h-10 mt-2 overflow-hidden">
-              Office Survival
+            <div class="font-jost text-center leading-5
+                        md:text-2xl
+                        xs:text-xl
+                        text-sm">
+              Office Survival Game
             </div>
           </div>
-          <div class="tags"> <!-- for tags -->
+          <div class="tags
+                      lg:text-base
+                      xs:text-sm
+                      text-xs"> <!-- for tags -->
             <ul>
               <li class="java">Java</li>
             </ul>
@@ -41,14 +60,20 @@
         </div>
         <div class="project-container">
           <div class="proj">
-            <router-link :to="{name:'webchat'}" class="flex-1 hover:opacity-75 duration-200">
-              <img src="/purikone.jpg" class="w-full h-full select-none" draggable="false" />
+            <router-link :to="{name:'webchat'}" class="w-full inline-block mb-2">
+              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none" draggable="false" />
             </router-link>
-            <div class="font-jost text-3xl text-center h-10 mt-2 overflow-hidden">
+            <div class="font-jost text-center leading-5
+                        md:text-2xl
+                        xs:text-xl
+                        text-sm">
               Web Chat
             </div>
           </div>
-          <div class="tags"> <!-- for tags -->
+          <div class="tags
+                      lg:text-base
+                      xs:text-sm
+                      text-xs"> <!-- for tags -->
             <ul>
               <li class="next-js">Next.js</li>
               <li class="tailwind">Tailwind</li>
@@ -67,25 +92,27 @@
   background-color: white;
 
   display: flex;
-  margin: 2rem;
-  /* width: 25rem;
-  aspect-ratio: 5/6; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   padding: 0.4rem;
+  width: 100%;
+  height: fit-content;
+  /* aspect-ratio: 1.5; */
 }
 .project-container > .proj {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 300px;
-  aspect-ratio: 1.5;
+  flex: 1 1 0%;
   padding: 0.4rem;
 }
 .project-container > .tags {
   margin: 0.4rem;
   padding: 0.4rem;
-  /* background: rgba(150,160,175); */
-  box-shadow: inset 0 0 5px rgb(0,0,0);
   background-color: rgb(245,245,245);
+  box-shadow: inset 0 0 5px rgb(0,0,0);
 }
 .tags > ul > li {
   font-family: 'Jost';
@@ -122,9 +149,10 @@
   background-color: rgba(241,142,67,0.5);
 }
 
-@media (min-width: 768px) {
-  .project-container > .proj {
-    width: 24rem;
+
+@media (min-width: 480px) { /* xs */
+  .project-container {
+    width: calc(480px - 2rem);
   }
 }
 
