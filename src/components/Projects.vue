@@ -6,18 +6,17 @@
   <div class="w-full flex flex-col
               md:p-10">
     <div class="w-full h-full flex flex-col bg-col1-3">
-      <div class="mt-20 text-center font-marcellus tracking-[0.2em] select-none text-white
-                  lg:text-7xl            
-                  md:text-6xl
-                  sm:text-5xl
-                  text-4xl">
+      <div class="text-center font-marcellus tracking-[0.2em] select-none text-white
+                  md:text-7xl md:mt-20 md:mb-10
+                  xs:text-5xl
+                  text-4xl mt-10">
         PROJECTS
       </div>
       <div class="flex flex-wrap justify-center">
         <div class="project-container">
           <div class="proj">
             <router-link :to="{name:'webchat'}" class="w-full inline-block mb-2">
-              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none" draggable="false" />
+              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none hover:opacity-75 duration-200" draggable="false" />
             </router-link>
             <div class="font-jost text-center leading-5
                         md:text-2xl
@@ -40,7 +39,7 @@
         <div class="project-container">
           <div class="proj">
             <router-link :to="{name:'office-survival'}" class="w-full inline-block mb-2">
-              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none" draggable="false" />
+              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none hover:opacity-75 duration-200" draggable="false" />
             </router-link>
             <div class="font-jost text-center leading-5
                         md:text-2xl
@@ -61,7 +60,7 @@
         <div class="project-container">
           <div class="proj">
             <router-link :to="{name:'webchat'}" class="w-full inline-block mb-2">
-              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none" draggable="false" />
+              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none hover:opacity-75 duration-200" draggable="false" />
             </router-link>
             <div class="font-jost text-center leading-5
                         md:text-2xl
@@ -153,6 +152,24 @@
 @media (min-width: 480px) { /* xs */
   .project-container {
     width: calc(480px - 2rem);
+  }
+}
+@media (min-width: 1024px) { /* lg */
+  .project-container {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+  }
+}
+@media (min-width: 1280px) { /* xl */
+  .project-container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+@media (min-width: 1536px) { /* 2xl */
+  .project-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 

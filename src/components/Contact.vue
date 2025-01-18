@@ -56,18 +56,30 @@ const copyBtnLeave = ()=>{
   <div class="mt-40 mb-20 flex flex-col justify-center">
     <div class="font-marcellus tracking-[0.2em] text-center py-4
                 md:text-7xl
-                text-5xl">
+                sm:text-6xl
+                xs:text-5xl
+                text-4xl">
       CONTACT
     </div>
-    <div class="flex justify-center py-4 text-lg">
+    <div class="flex justify-center py-4
+                sm:text-lg
+                xs:text-sm
+                text-xs">
       Please contact:
       <div class="relative overflow-hidden pb-[0.1rem]">
         <div class="text-col3-4 px-4" ref="email">
           jeu&#110;&#103;&#46;n&#97;ttanan&#64;gmai&#108;&#46;&#99;om
         </div>
-        <div class="bg-black h-[0.1rem] w-full absolute left-[-100%]" ref="emailUnderline"></div>
+        <div class="bg-black w-full absolute left-[-100%]
+                    xs:h-[0.1rem]
+                    h-[0.05rem]"
+          ref="emailUnderline">
+        </div>
       </div>
-      <button class="relative w-7 h-7" @click="mailCopyClicked" @mouseenter="copyBtnEnter" @mouseleave="copyBtnLeave">
+      <button class="relative aspect-square
+                      xs:h-7
+                      h-5"
+        @click="mailCopyClicked" @mouseenter="copyBtnEnter" @mouseleave="copyBtnLeave">
         <img src="/copy_icon.png" class="w-full h-full top-0 left-0 absolute"/>
         <div v-show="isMailCopy" class="w-full h-full top-0 left-0 absolute border-green-600 border-2 rounded-full"></div>
       </button>
