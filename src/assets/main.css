@@ -24,5 +24,10 @@
 }
 
 #education, #about, #projects, #contact {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 4rem;
+}
+@media (min-width:640){ /* sm */
+  #education, #about, #projects, #contact {
+    scroll-margin-top: 6rem;
+  }
 }

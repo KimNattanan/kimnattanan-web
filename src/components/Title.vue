@@ -15,8 +15,8 @@ const imgStyle = useTitleImgStyleStore();
                 sm:text-4xl
                 ml-10 mr-4 text-3xl">
       <div class="text-[100%] py-4">Kim,</div>
-      <div class="text-[25%] py-2">Hello! I'm Kim, currently studying in grade 12.</div>
-      <div class="text-[25%] py-2">Nice to meet you!</div>
+      <div class="text-[25%] py-2 leading-5">Hello! I'm Kim, currently studying in grade 12.</div>
+      <div class="text-[25%] py-2 leading-5">Nice to meet you!</div>
     </div>
     <div class="flex-1 flex justify-end h-full">
       <img
