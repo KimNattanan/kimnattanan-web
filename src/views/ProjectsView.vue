@@ -12,7 +12,12 @@ onMounted(()=>{
 </script>
 <template>
 
-  <div class="bg-col1-4 px-40 py-5">
+  <div class="bg-col1-4 py-5
+              xl:px-40
+              lg:px-32 lg:text-base
+              md:px-20 md:text-sm
+              sm:px-14
+              px-6 text-xs">
     <RouterView/>
   </div>
 

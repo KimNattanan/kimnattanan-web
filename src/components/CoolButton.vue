@@ -50,13 +50,18 @@ defineProps<{
 
   
   <button
-    class="pb-[0.1rem] relative overflow-hidden"
+    class="relative overflow-hidden
+            sm:pb-[0.1rem]
+            pb-[0.05rem]"
     @click="click"
     @mouseenter="mouseEnter"
     @mouseleave="mouseLeave"
   >
     <slot/>
-    <div class="bg-black h-[0.1rem] w-full absolute left-[-100%]" ref="underline"></div>
+    <div class="bg-black w-full absolute left-[-100%]
+                sm:h-[0.1rem]
+                h-[0.05rem]"
+      ref="underline"></div>
   </button>
   
 </template>

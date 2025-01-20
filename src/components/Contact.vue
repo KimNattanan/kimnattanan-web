@@ -66,12 +66,14 @@ const copyBtnLeave = ()=>{
                 xs:text-sm
                 text-xs">
       Please contact:
-      <div class="relative overflow-hidden pb-[0.1rem]">
+      <div class="relative overflow-hidden
+                  sm:pb-[0.1rem]
+                  pb-[0.05rem]">
         <div class="text-col3-4 px-4" ref="email">
           jeu&#110;&#103;&#46;n&#97;ttanan&#64;gmai&#108;&#46;&#99;om
         </div>
         <div class="bg-black w-full absolute left-[-100%]
-                    xs:h-[0.1rem]
+                    sm:h-[0.1rem]
                     h-[0.05rem]"
           ref="emailUnderline">
         </div>

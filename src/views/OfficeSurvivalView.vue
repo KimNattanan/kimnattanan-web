@@ -27,8 +27,19 @@ onMounted(()=>{
 
 <template>
   <div class="flex flex-col">
-    <div class="font-marcellus text-6xl tracking-[0.2em] text-col1-5 text-center my-4">OFFICE SURVIVAL</div>
-    <div class="bg-white rounded-xl w-full my-4 px-40 py-16">
+    <div class="font-marcellus tracking-[0.2em] text-col1-5 text-center my-4
+                lg:text-6xl
+                sm:text-5xl
+                text-4xl">
+      OFFICE SURVIVAL
+    </div>
+    <div class="bg-white rounded-xl w-full my-4 py-16
+                xl:px-40
+                lg:px-28
+                md:px-20
+                sm:px-12
+                xs:px-8
+                px-6">
       <div class="p-6 border-2 border-col3-2 w-fit" ref="codeBlock">
         <div class="flex my-2">
           Source code:
@@ -42,7 +53,6 @@ onMounted(()=>{
           Latest release:
           <div class="ml-4">
             <div class="flex">
-              <div class="mr-2">v.0.1-alpha:</div>
               <a href="https://github.com/KimNattanan/java-project/releases/download/v.0.1-alpha/OfficeSurvival.zip" target="_blank">
                 <CoolDiv class="text-col3-4 w-fit">
                   【Download】
