@@ -15,8 +15,10 @@
       <div class="flex flex-wrap justify-center">
         <div class="project-container">
           <div class="proj">
-            <router-link :to="{name:'webchat'}" class="w-full inline-block mb-2">
-              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none hover:opacity-75 duration-200" draggable="false" />
+            <router-link :to="{name:'webchat'}" class="inline-block mb-2
+                                                        lg:w-[600px]
+                                                        md:w-[500px]">
+              <img src="/webchat_thumbnail.jpeg" class="w-full aspect-[1529/1416] select-none hover:opacity-75 duration-200" draggable="false" />
             </router-link>
             <div class="font-jost text-center leading-5
                         md:text-2xl
@@ -38,8 +40,10 @@
         </div>
         <div class="project-container">
           <div class="proj">
-            <router-link :to="{name:'office-survival'}" class="w-full inline-block mb-2">
-              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none hover:opacity-75 duration-200" draggable="false" />
+            <router-link :to="{name:'office-survival'}" class="inline-block mb-2
+                                                                lg:w-[600px]
+                                                                md:w-[500px]">
+              <img src="/purikone.jpg" class="w-full aspect-[1529/1416] select-none hover:opacity-75 duration-200" draggable="false" />
             </router-link>
             <div class="font-jost text-center leading-5
                         md:text-2xl
@@ -59,8 +63,10 @@
         </div>
         <div class="project-container">
           <div class="proj">
-            <router-link :to="{name:'webchat'}" class="w-full inline-block mb-2">
-              <img src="/purikone.jpg" class="w-full aspect-[3025.6/3178.4] select-none hover:opacity-75 duration-200" draggable="false" />
+            <router-link :to="{name:'webchat'}" class="inline-block mb-2
+                                                        lg:w-[600px]
+                                                        md:w-[500px]">
+              <img src="/webchat_thumbnail.jpeg" class="w-full aspect-[1529/1416] select-none hover:opacity-75 duration-200" draggable="false" />
             </router-link>
             <div class="font-jost text-center leading-5
                         md:text-2xl
@@ -96,15 +102,17 @@
   margin-left: 1rem;
   margin-right: 1rem;
   padding: 0.4rem;
-  width: 100%;
   height: fit-content;
-  /* aspect-ratio: 1.5; */
+  min-width: fit-content;
+  transition: all 500ms;
 }
+/* .project-container:hover {
+  scale: 1.2;
+} */
 .project-container > .proj {
   position: relative;
   display: flex;
   flex-direction: column;
-  flex: 1 1 0%;
   padding: 0.4rem;
 }
 .project-container > .tags {
