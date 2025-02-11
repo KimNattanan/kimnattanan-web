@@ -26,7 +26,7 @@ const imgStyle = useTitleImgStyleStore();
                 lg:object-contain
                 object-cover"
         :style="{opacity: imgStyle.opac}"
-        src="/kim_profile.jpg"
+        src="/kim_profile.png"
         draggable="false"
       />
       <img
@@ -36,7 +36,7 @@ const imgStyle = useTitleImgStyleStore();
                 lg:object-contain
                 object-cover hidden"
         :style="{opacity: imgStyle.opac}"
-        src="/kim_profile_square.jpg"
+        src="/kim_profile_square.png"
         draggable="false"
       />
     </div>
