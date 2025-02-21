@@ -16,7 +16,6 @@
         <div class="project-container">
           <div class="proj">
             <router-link :to="{name:'webchat'}" class="inline-block mb-2
-                                                        lg:w-[600px]
                                                         md:w-[500px]">
               <img src="/webchat_thumbnail.jpeg" class="w-full aspect-[1529/1416] select-none hover:opacity-75 duration-200" draggable="false" />
             </router-link>
@@ -41,7 +40,6 @@
         <div class="project-container">
           <div class="proj">
             <router-link :to="{name:'office-survival'}" class="inline-block mb-2
-                                                                lg:w-[600px]
                                                                 md:w-[500px]">
               <img src="/purikone.jpg" class="w-full aspect-[1529/1416] select-none hover:opacity-75 duration-200" draggable="false" />
             </router-link>
@@ -63,16 +61,15 @@
         </div>
         <div class="project-container">
           <div class="proj">
-            <router-link :to="{name:'webchat'}" class="inline-block mb-2
-                                                        lg:w-[600px]
-                                                        md:w-[500px]">
-              <img src="/webchat_thumbnail.jpeg" class="w-full aspect-[1529/1416] select-none hover:opacity-75 duration-200" draggable="false" />
+            <router-link :to="{name:'pong'}" class="inline-block mb-2
+                                                    md:w-[500px]">
+              <img src="/pong_thumbnail.png" class="w-full aspect-[1529/1416] select-none hover:opacity-75 duration-200" draggable="false" />
             </router-link>
             <div class="font-jost text-center leading-5
                         md:text-2xl
                         xs:text-xl
                         text-sm">
-              Web Chat
+              Pong-playing AI
             </div>
           </div>
           <div class="tags
@@ -80,9 +77,8 @@
                       xs:text-sm
                       text-xs"> <!-- for tags -->
             <ul>
-              <li class="next-js">Next.js</li>
-              <li class="tailwind">Tailwind</li>
-              <li class="supabase">Supabase</li>
+              <li class="python">Python</li>
+              <li class="default-tag-col">DQN</li>
             </ul>
           </div>
         </div>
@@ -154,6 +150,12 @@
 }
 .tags > ul > .java {
   background-color: rgba(241,142,67,0.5);
+}
+.tags > ul > .python {
+  background-color: #ffe873;
+}
+.tags > ul > .default-tag-col {
+  background-color: #c4c4c4;
 }
 
 

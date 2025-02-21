@@ -4,6 +4,7 @@ import NotFoundView from '@/views/NotFoundView.vue'
 import WebChatView from '@/views/WebChatView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import OfficeSurvivalView from '@/views/OfficeSurvivalView.vue'
+import PongView from '@/views/PongView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
           path: '/projects/office-survival',
           name: 'office-survival',
           component: OfficeSurvivalView,
+        },
+        {
+          path: '/projects/pong',
+          name: 'pong',
+          component: PongView,
         },
       ],
     },
